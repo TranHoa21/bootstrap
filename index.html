@@ -162,12 +162,9 @@
                 <h5 class="hot-products-title">
                     Sản Phẩm Hot
                 </h5>
-                <div id="notification" class="alert alert-success" style="display: none; margin-top: 10px;">
-                    Đã thêm sản phẩm vào giỏ hàng!
-                </div>
                 <div class="hot-products">
                     <div class="hot-products-box row">
-                        <div class="col-md-3 hot-products-item">
+                        <div class="col-md-3 hot-products-item" data-id="1">
                             <img class="hot-products-item-image"
                                 src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg" />
                             <h6 class="hot-products-item-title">Điện thoại iPhone 16 Pro Max 256GB</h6>
@@ -175,7 +172,7 @@
                             <button class="btn-hot-products-item">Chọn sản phẩm</button>
 
                         </div>
-                        <div class="col-md-3 hot-products-item">
+                        <div class="col-md-3 hot-products-item" data-id="2">
                             <img class="hot-products-item-image"
                                 src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg" />
                             <h6 class="hot-products-item-title">Điện thoại iPhone 15 Pro Max 256GB</h6>
@@ -266,32 +263,95 @@
                 </div>
 
             </div>
+            <div class="product-details " style="display: none;">
+                <div id="notification" class="alert alert-success" style="display: none; margin-top: 10px;">
+                    Đã thêm sản phẩm vào giỏ hàng!
+                </div>
+                <div class="product-details-content row">
+                    <div class="col-md-6 product-box-item">
+                        <img id="product-image"
+                            src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg"
+                            alt="Product Image" />
+                        <h3 id="product-price"></h3>
+                        <div class="box-inventory">
+                            <p id="product-sold">Đã bán:</p>
+                            <p id="product-inventory">Tồn kho:</p>
+                        </div>
+                        <div class="box-btn-product">
+                            <button id="buy-now" class="btn btn-success">Mua Ngay</button>
+                            <button id="add-to-cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 product-box-item">
+                        <h5 id="product-title"></h5>
+                        <!-- Lựa chọn dung lượng -->
+                        <div id="capacity-options">
+                        </div>
+
+                        <label>Chọn màu:</label>
+                        <div id="color-options">
+                        </div>
+                        <div>
+                            <label for="quantity">Số lượng:</label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                        </div>
+                        <p id="product-description"></p>
+                        <div class="detailed-information">
+                            <ul class="detailed-information-ul">
+                                <li>RAM</li>
+                                <li>Mạng di động</li>
+                                <li>Sim</li>
+                                <li>CPU</li>
+                                <li>Hệ điều hành</li>
+                                <li>Công nghệ màn hình</li>
+                                <li>Độ phân giải</li>
+                            </ul>
+                            <ul>
+                                <li id="product-ram">RAM</li>
+                                <li id="product-mobile_network">Mạng di động</li>
+                                <li id="product-sim">Sim</li>
+                                <li id="product-cpu">CPU</li>
+                                <li id="product-operating_system">Hệ điều hành</li>
+                                <li id="product-screen">Công nghệ màn hình</li>
+                                <li id="product-resolution">Độ phân giải</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Nút Mua Ngay và Thêm vào giỏ hàng -->
+
+
+                    <button id="back-to-products-details" class="btn btn-primary">Quay lại</button>
+                </div>
+            </div>
+
+
             <div class="cart">
+                <button id="back-to-products">Quay lại</button>
                 <table class="table table-bordered cart-table">
                     <thead>
                         <tr>
-                            <th class="menu-" scope="col">Chọn</th>
-                            <th scope="col">Ảnh</th>
-                            <th scope="col">Loại</th>
-                            <th scope="col">Số lượng</th>
-                            <th scope="col">Tổng tiền</th>
-                            <th scope="col">Xóa</th>
+                            <th class="menu-cart" scope="col">#</th>
+                            <th class="menu-cart" scope="col">Ảnh</th>
+                            <th class="menu-cart" scope="col">Tên</th>
+                            <th class="menu-cart" scope="col">Loại</th>
+                            <th class="menu-cart" scope="col">Số lượng</th>
+                            <th class="menu-cart" scope="col">Tổng tiền</th>
+                            <th class="menu-cart" scope="col">Xóa</th>
                         </tr>
                     </thead>
                     <tbody id="cartItems">
                         <!-- Các sản phẩm sẽ được thêm vào đây -->
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4" style="text-align: right;"><strong>Tổng tiền:</strong></td>
-                            <td id="totalPrice">0₫</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
                 </table>
-                <button id="back-to-products">Quay lại</button>
-                <button id="deleteAll" class="btn btn-danger">Xóa tất cả</button>
-                <button id="checkout" class="btn btn-success">Thanh toán</button>
+                <div class="btn-box-cart">
+                    <button id="checkout" class="btn btn-success">Thanh toán</button>
+                    <button id="deleteAll" class="btn btn-danger">Xóa tất cả</button>
+                </div>
+                <div class="total-amount">
+                    <h5 class="total-amount-title"><strong>Tổng tiền cần thanh toán:</strong></h5>
+                    <h5 class="total-amount-price" id="totalPrice">0</h5>
+                </div>
             </div>
         </div>
     </div>

@@ -270,7 +270,7 @@
                 <table class="table table-bordered cart-table">
                     <thead>
                         <tr>
-                            <th scope="col">Chọn</th>
+                            <th class="menu-" scope="col">Chọn</th>
                             <th scope="col">Ảnh</th>
                             <th scope="col">Loại</th>
                             <th scope="col">Số lượng</th>
@@ -281,6 +281,13 @@
                     <tbody id="cartItems">
                         <!-- Các sản phẩm sẽ được thêm vào đây -->
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;"><strong>Tổng tiền:</strong></td>
+                            <td id="totalPrice">0₫</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
                 </table>
                 <button id="back-to-products">Quay lại</button>
                 <button id="deleteAll" class="btn btn-danger">Xóa tất cả</button>

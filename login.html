@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2 class="login-title">Đăng nhập tài khoản</h2>
+        <p class="note">Nếu bạn có tài khoản xin vui lòng đăng nhập</p>
+        <div class="row login">
+            <div class="col-md-5 item">
+                <h5 class="login-account">Đăng Nhập Tài Khoản</h5>
+                <form class="form-box">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email <span class="highlight">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mật Khẩu<span class="highlight">*</span></label>
+                        <input type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-primary" onClick="">Đăng Nhập</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 item">
+                <h5 class="login-account">Đăng Ký Tài Khoản</h5>
+                <p class="signup-account">Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển.
+                    Cập nhật các sự
+                    kiện và chương trình giảm giá của chúng tôi.</p>
+                <div class="d-grid mt-4">
+                    <button type="button" class="btn btn-primary" onClick="window.location.href='signup.html'">Đăng
+                        Ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

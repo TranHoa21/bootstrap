@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-head">
+            <div class="box-contact">
+                <div class="box-contact-phone">
+                    <img class="support-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728932992/call_3811725_rqyu52.png" />
+                    <p class="phone-data">(04) 37868904</p>
+                </div>
+                <div class="box-contact-phone">
+                    <img class="support-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728933049/forward_13903174_voaxnq.png" />
+                    <p class="phone-data">support@gmail.com</p>
+                </div>
+            </div>
+            <div class="box-log">
+                <button class="login-box" onClick="window.location.href='login.html'">
+                    <img class="login-icon"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728967854/person_12259373_owtewa.png" />
+                    <p class="login-content">Đăng Nhập</p>
+                </button>
+                <button class="login-box" onClick="window.location.href='signup.html'">
+                    <img class="login-icon"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728967854/person_12259373_owtewa.png" />
+                    <p class="login-content">Đăng Ký</p>
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728918502/black_white_nature_logo_1_-Photoroom_wup7zz.png"
+                    alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <form class="d-flex search-bar" role="search">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm" aria-label="Search">
+                <button type="submit">
+                    <img src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728919725/search_3917132_v4msu0.png"
+                        alt="Search" class="search-icon">
+                </button>
+            </form>
+            <div class="shopping-cart">
+                <img class="cart-icon"
+                    src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728920284/shopping-cart_6573030_hmnyev.png" />
+                <p>1 sản phẩm <img class="down-icon"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728920655/yield_3970374_davsb0.png" />
+                </p>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang Chủ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="introduce.html">Giới Thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body row">
+        <div class="col-md-4 side-bar">
+            <div class="all-product">
+                <div class="list-product">
+                    <img src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728931713/menu-bar_10080494_ghj1mu.png"
+                        class="list-product-icon" />
+                    <h6 class="list-product-title">Danh Mục Sản Phẩm</h6>
+                </div>
+                <ul class="product-ul">
+                    <li class="product-item">Sản phẩm nổi bật</li>
+                    <li class="product-item">Sản phẩm khuyến mãi</li>
+                    <li class="product-item">Điện thoại di động</li>
+                    <li class="product-item">Laptop</li>
+                    <li class="product-item">Tivi</li>
+                    <li class="product-item">Tai nghe</li>
+                    <li class="product-item">Âm thanh</li>
+                    <li class="product-item">Máy văn phòng</li>
+                </ul>
+            </div>
+            <div class="support-box">
+                <h5 class="support-title">Hỗ Trợ Trực Tuyến</h5>
+                <div class="support-data">
+                    <img class="support-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728932992/call_3811725_rqyu52.png" />
+                    <div class="support-tt">
+                        <p class="support-ctv">Tư vấn bán hàng 1</p>
+                        <p class="support-name-phone">Mrs. Dung (04) 37868904</p>
+                    </div>
+                </div>
+                <div class="support-data">
+                    <img class="support-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728932992/call_3811725_rqyu52.png" />
+                    <div class="support-tt">
+                        <p class="support-ctv">Tư vấn bán hàng 2</p>
+                        <p class="support-name-phone">Mr. Tuấn (04) 37868904</p>
+                    </div>
+                </div>
+                <div class="support-data">
+                    <img class="support-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728933049/forward_13903174_voaxnq.png" />
+                    <div class="support-tt">
+                        <p class="support-ctv">Email liên hệ </p>
+                        <p class="support-name-phone">support@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-box">
+                <div class="news-box-title">
+                    <h5 class="news-title">Tin Tức</h5>
+                    <div class="news-btn">
+                        <button class="previous"><img class="previous-icon"
+                                src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728934558/arrow-left_5082834_uup8uq.png" /></button>
+                        <button class="next"><img class="next-icon"
+                                src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728934552/arrow-right_5082848_itat8z.png" /></button>
+                    </div>
+                </div>
+                <div class="post-box">
+                    <img class="post-image"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728408006/html_le8svd.png" />
+                    <h5 class="post-title">LG ra mắt loạt tv oled 4k tích hợp hdr tại ces 2016</h5>
+                    <p class="post-date">08/01/2016</p>
+                    <p class="post-describe">LG vừa giới thiệu loạt TV OLED 4K mới tại triển lãm CES 2016, trong đó tiêu
+                        biểu là 2 mẫu TV LG OLED 77/65-inch 08 và 65/66-inch E6 có tích hợp tính năng HDR. Theo đó , 8
+                        mẫu TV OLED 2016 đều được tích hợp những...</p>
+                </div>
+                <div class="sale-box">
+                    <img class="sale-image" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 home-data">
+            <img class="banner-home"
+                src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728968024/beautiful-happy-asian-girl-showing-mobile-phone-screen-application-smartphone-gadget-standing-yellow-background_1_rdbgpa.jpg" />
+            <div class="box-product">
+                <div class="hot-products"></div>
+                <div class="outstanding-products"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Bootstrap Example</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

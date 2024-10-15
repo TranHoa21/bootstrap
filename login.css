@@ -1,0 +1,61 @@
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container{
+    width: 90%;
+}
+
+.login-title{
+    text-transform: uppercase;
+    padding: 30px 0;
+    box-shadow: 0 0.2px 0 rgba(0, 0, 0, 0.5);
+}
+.note{
+    padding-top: 10px;
+}
+.row.login{
+    margin: 40px 0;
+    justify-content: space-between;
+}
+.col-md-5.item {
+    width:47%;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    position: relative; /* Giữ vị trí của khung chứa */
+    padding: 20px 40px;
+    height:max-content;
+}
+
+.login-account {
+    position: absolute;
+    top: -15px; /* Đẩy phần tử lên để đè lên đường viền */
+    left: 50%; /* Đặt phần tử ở giữa theo chiều ngang */
+    transform: translateX(-50%); /* Căn chỉnh giữa phần tử so với chính nó */
+    background-color: #f7f7f7; /* Đặt nền trắng để che đường viền */
+    padding: 0 10px; /* Khoảng cách cho nền */
+}
+.signup-account{
+    padding: 30px 0 0 0;
+    margin:0;
+}
+.form-box{
+    padding: 30px 0 ;
+}
+.highlight{
+    color: red;
+}
+.btn.btn-primary{
+    text-align: start;
+    width:max-content;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.form-control{
+    background-color: #e4e4e4;
+    border: 1px solid rgba(163, 163, 163, 0.363);
+}

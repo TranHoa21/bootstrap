@@ -210,10 +210,12 @@ const products = [
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Thêm sự kiện cho các nút trong sản phẩm mới
     document.querySelectorAll('.btn-new-products-item').forEach(button => {
-        button.addEventListener('click', function () {
-            const productItem = button.closest('.new-products-item'); // Tìm phần tử sản phẩm chứa nút
-            const productId = productItem.getAttribute('data-id'); // Lấy ID sản phẩm từ data-id
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); // Ngăn chặn sự kiện nổi bọt để không kích hoạt sự kiện cho phần tử cha
+            const productItem = button.closest('.new-products-item');
+            const productId = productItem.getAttribute('data-id');
 
             if (productId) {
                 // Điều hướng tới trang chi tiết sản phẩm với ID
@@ -223,11 +225,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+    // Thêm sự kiện cho các nút trong sản phẩm hot
     document.querySelectorAll('.btn-hot-products-item').forEach(button => {
-        button.addEventListener('click', function () {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); // Ngăn chặn sự kiện nổi bọt
             const productItem = button.closest('.hot-products-item');
             const productId = productItem.getAttribute('data-id');
 
@@ -242,7 +244,39 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // Thêm sự kiện cho các phần tử sản phẩm hot
+    document.querySelectorAll('.hot-products-item').forEach(productItem => {
+        productItem.addEventListener('click', function () {
+            const productId = productItem.getAttribute('data-id');
+
+            if (productId) {
+                // Lưu ID sản phẩm vào localStorage để sử dụng ở trang product.html
+                localStorage.setItem('selectedProductId', productId);
+
+                // Điều hướng tới trang chi tiết sản phẩm
+                window.location.href = '/product/product.html';
+            } else {
+                console.error('ID sản phẩm không tồn tại!');
+            }
+        });
+    });
+
+    // Thêm sự kiện cho các phần tử sản phẩm mới
+    document.querySelectorAll('.new-products-item').forEach(productItem => {
+        productItem.addEventListener('click', function () {
+            const productId = productItem.getAttribute('data-id');
+
+            if (productId) {
+                // Điều hướng tới trang chi tiết sản phẩm với ID
+                window.location.href = `/product/product.html?id=${productId}`;
+            } else {
+                console.error('ID sản phẩm không tồn tại!');
+            }
+        });
+    });
 });
+
 
 // Trong trang product.html
 document.addEventListener('DOMContentLoaded', function () {

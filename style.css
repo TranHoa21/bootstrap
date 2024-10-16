@@ -281,14 +281,14 @@ padding:0;
 .detailed-information-ul{
   width:50%;
 }
-ul li:nth-child(even) {
+.detailed-information-li:nth-child(even) {
   background-color: #f2f2f2;
   font-size: 80%;
   height: max-content;
   padding:10px;
 }
 
-ul li:nth-child(odd) {
+.detailed-information-li:nth-child(odd) {
   background-color: #ffffff;
   font-size: 80%;
   padding:10px;
@@ -300,4 +300,36 @@ ul li:nth-child(odd) {
 .description-box-title{
   font-size: 100%;
   font-weight: 500;
+}
+
+.pagination {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh các nút */
+  justify-content: center; /* Căn giữa các nút */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.pagination button {
+  background-color: #007bff; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền */
+  border-radius: 5px; /* Bo góc */
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.pagination button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc; /* Màu nền cho nút bị vô hiệu hóa */
+  cursor: not-allowed; /* Con trỏ không cho phép */
+}
+
+.pagination button.active {
+  background-color: #0056b3; /* Màu nền cho nút đang chọn */
+  color: white; /* Màu chữ cho nút đang chọn */
+  font-weight: bold; /* Chữ đậm cho nút đang chọn */
 }

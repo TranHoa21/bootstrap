@@ -1,0 +1,46 @@
+footer {
+    background-color: #f8f9fa; /* Màu nền cho footer */
+    padding: 40px 0; /* Khoảng cách trên và dưới */
+    color: #333; /* Màu chữ */
+    font-size: 14px; /* Kích thước chữ */
+  }
+  
+  .footer h5 {
+    text-align: start;
+    font-size: 18px; /* Kích thước tiêu đề cột */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-weight: bold; /* Chữ đậm cho tiêu đề */
+    color: #000000; /* Màu tiêu đề */
+  }
+  .row.footer{
+    margin:0;
+  }
+  .footer-item ul {
+    padding-left: 0; /* Loại bỏ padding mặc định của ul */
+    list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+    text-align: left;
+  }
+  
+  .footer-item ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  }
+  
+  .footer-item ul li a {
+    text-align: start;
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    color: #333; /* Màu chữ liên kết */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+  }
+  
+  .footer-item ul li a:hover {
+    color: rgba(120, 202, 100, 1) ; /* Màu chữ khi hover */
+  }
+  
+  .footer {
+    border-top: 1px solid #ddd; /* Đường viền trên cùng của footer */
+    padding-top: 20px; /* Khoảng cách giữa đường viền và nội dung */
+  }
+  
+  .footer-item {
+    margin-bottom: 30px; /* Khoảng cách giữa các cột trên màn hình nhỏ */
+  }

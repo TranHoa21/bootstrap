@@ -54,13 +54,6 @@ const products = [
 ];
 
 const cartItemsData = {};
-document.getElementById('show-cart').style.display = 'block';
-
-document.getElementById('show-cart').addEventListener('click', function () {
-    document.querySelector('.box-product').style.display = 'none'; // Ẩn phần sản phẩm chính
-    document.querySelector('.cart').style.display = 'block'; // Hiển thị giỏ hàng
-    document.querySelector('.cart').scrollIntoView({ behavior: 'smooth' });
-});
 
 
 function addToCart(productTitle, productPrice, productImage, productType, productId, productQuantity) {
@@ -362,3 +355,11 @@ document.querySelectorAll('.color-option').forEach(option => {
         updatePrice(); // Gọi hàm updatePrice để cập nhật giá
     });
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định
+        parent.location.href = this.href; // Chuyển hướng trang cha
+    });
+});
+

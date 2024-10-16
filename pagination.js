@@ -1,6 +1,6 @@
 import { productData } from './data.js';
 
-const itemsPerPage = 8; // Số lượng sản phẩm trên mỗi trang
+const itemsPerPage = 12; // Số lượng sản phẩm trên mỗi trang
 let currentPage = 1;
 
 // Hàm để hiển thị sản phẩm dựa trên số trang hiện tại

@@ -1,0 +1,116 @@
+.container-head{
+    background-color: rgba(120, 202, 100, 1);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding: 10px ;
+  }
+  .box-contact{
+    display:flex;
+    align-items: center;
+  }
+  .box-contact-phone{
+    align-items: center;
+    display:flex;
+    padding: 0 10px;
+  }
+  .support-image{
+    width: 24px;
+    height:24px;
+    margin:5px;
+  }
+  .box-log{
+    display:flex;
+    align-items: center;
+    margin: 5px;
+  }
+  .login-icon{
+    width: 24px;
+    height:24px;
+    background-color: white;
+    border-radius: 25px;
+    margin:0 5px;
+  }
+  .login-box{
+    display:flex;
+    color:white;
+    
+  }
+  
+  .container-fluid{
+    display: flex;
+  
+  }
+  .d-inline-block.align-text-top{
+    width:150px;
+    height:auto;
+    object-fit:cover;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    height: 3rem;
+    border: 1px solid #afafaf;
+    border-radius: 25px;
+  }
+  input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .shopping-cart{
+    display:flex !important;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  .cart-icon{
+    width: 34px;
+    height: 34px;
+    margin:0 5px;
+  }
+  p{
+    margin:0;
+  }
+  .down-icon{
+    width:10px;
+    height:10px;
+  }
+  .navbar.navbar-expand-lg.navbar-light.bg-light{
+     padding:0;
+     display:block;
+  }
+  .collapse.navbar-collapse{
+    width:100%;
+    background-color: rgba(70,70,70,255);
+  }
+  .nav-item.active{
+    background-color: rgba(133,207,115,255);
+    
+  } 
+  .nav-item{
+    margin: 0px 1.5rem;
+  }
+  .nav-link{
+    padding: 1rem 0;
+    color: white !important;
+  
+  }

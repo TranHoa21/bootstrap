@@ -1,57 +1,6 @@
 let cartItemCount = 0; // Khởi tạo biến cartItemCount
 let totalOrderPrice = 0; // Khởi tạo biến tổng tiền đơn hàng
 
-const products = [
-    {
-        id: '1',
-        title: 'Điện thoại iPhone 16 Pro Max 256GB',
-        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
-        description: 'Sản phẩm cao cấp của Apple với công nghệ hiện đại.',
-        options: {
-            capacity: ['256GB', '512GB', '1TB'],
-            color: ['Titan tự nhiên', 'Titan trắng', 'Titan đen', 'Titan Sa Mạc']
-        },
-        prices: {
-            '256GB': {
-                'Titan tự nhiên': '34.990.000₫',
-                'Titan trắng': '35.490.000₫',
-                'Titan đen': '35.990.000₫',
-                'Titan Sa Mạc': '36.490.000₫'
-            },
-            '512GB': {
-                'Titan tự nhiên': '39.990.000₫',
-                'Titan trắng': '40.490.000₫',
-                'Titan đen': '40.990.000₫',
-                'Titan Sa Mạc': '41.490.000₫'
-            },
-            '1TB': {
-                'Titan tự nhiên': '44.990.000₫',
-                'Titan trắng': '45.490.000₫',
-                'Titan đen': '45.990.000₫',
-                'Titan Sa Mạc': '46.490.000₫'
-            }
-        },
-        RAM: '8 GB',
-        mobile_network: 'Hỗ trợ 5G',
-        Sim: '1 Nano SIM & 1 eSIM',
-        CPU: 'Hãng không công bố',
-        operating_system: 'IOS',
-        screen: 'OLED',
-        resolution: 'Super Retina XDR (1320 x 2868 Pixels)',
-
-    },
-    {
-        id: '2',
-        title: 'Điện thoại iPhone 15 Pro Max 256GB',
-        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
-        description: 'Điện thoại iPhone 15 Pro Max với công nghệ mới nhất.',
-        options: {
-            capacity: ['128GB', '256GB'],
-            color: ['Đen', 'Xanh', 'Trắng']
-        },
-        price: '29.990.000₫' // Sản phẩm này chỉ có một giá
-    }
-];
 
 const cartItemsData = {};
 
@@ -208,15 +157,67 @@ function addToCart(productTitle, productPrice, productImage, productType, produc
     }
 }
 
+const products = [
+    {
+        id: '1',
+        title: 'Điện thoại iPhone 16 Pro Max 256GB',
+        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
+        description: 'iPhone 16 Pro Max 256GB là siêu phẩm công nghệ mới nhất từ Apple, mang đến thiết kế đẳng cấp và hiệu năng vượt trội. Sở hữu màn hình OLED Super Retina XDR sắc nét, hỗ trợ độ phân giải 1320 x 2868 pixels, thiết bị này cho trải nghiệm hiển thị chân thực và sống động. Với dung lượng lưu trữ lên đến 256GB và RAM 8GB, iPhone 16 Pro Max đảm bảo khả năng đa nhiệm mượt mà và lưu trữ rộng rãi. Bên cạnh đó, chiếc điện thoại này còn hỗ trợ mạng 5G và đi kèm các màu sắc độc đáo như Titan tự nhiên, Titan đen, Titan trắng, và Titan sa mạc, giúp người dùng thể hiện phong cách riêng biệt.',
+        options: {
+            capacity: ['256GB', '512GB', '1TB'],
+            color: ['Titan tự nhiên', 'Titan trắng', 'Titan đen', 'Titan Sa Mạc']
+        },
+        prices: {
+            '256GB': {
+                'Titan tự nhiên': '34.990.000₫',
+                'Titan trắng': '35.490.000₫',
+                'Titan đen': '35.990.000₫',
+                'Titan Sa Mạc': '36.490.000₫'
+            },
+            '512GB': {
+                'Titan tự nhiên': '39.990.000₫',
+                'Titan trắng': '40.490.000₫',
+                'Titan đen': '40.990.000₫',
+                'Titan Sa Mạc': '41.490.000₫'
+            },
+            '1TB': {
+                'Titan tự nhiên': '44.990.000₫',
+                'Titan trắng': '45.490.000₫',
+                'Titan đen': '45.990.000₫',
+                'Titan Sa Mạc': '46.490.000₫'
+            }
+        },
+        RAM: '8 GB',
+        mobile_network: 'Hỗ trợ 5G',
+        Sim: '1 Nano SIM & 1 eSIM',
+        CPU: 'Hãng không công bố',
+        operating_system: 'IOS',
+        screen: 'OLED',
+        resolution: 'Super Retina XDR (1320 x 2868 Pixels)',
+
+    },
+    {
+        id: '2',
+        title: 'Điện thoại iPhone 15 Pro Max 256GB',
+        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
+        description: 'Điện thoại iPhone 15 Pro Max với công nghệ mới nhất.',
+        options: {
+            capacity: ['128GB', '256GB'],
+            color: ['Đen', 'Xanh', 'Trắng']
+        },
+        price: '29.990.000₫' // Sản phẩm này chỉ có một giá
+    }
+];
+
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.btn-hot-products-item').forEach(button => {
+    document.querySelectorAll('.btn-new-products-item').forEach(button => {
         button.addEventListener('click', function () {
-            const productItem = button.closest('.hot-products-item'); // Tìm phần tử sản phẩm chứa nút
+            const productItem = button.closest('.new-products-item'); // Tìm phần tử sản phẩm chứa nút
             const productId = productItem.getAttribute('data-id'); // Lấy ID sản phẩm từ data-id
 
             if (productId) {
                 // Điều hướng tới trang chi tiết sản phẩm với ID
-                window.location.href = `product.html?id=${productId}`;
+                window.location.href = `/product/product.html?id=${productId}`;
             } else {
                 console.error('ID sản phẩm không tồn tại!');
             }
@@ -224,8 +225,143 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.btn-hot-products-item').forEach(button => {
+        button.addEventListener('click', function () {
+            const productItem = button.closest('.hot-products-item');
+            const productId = productItem.getAttribute('data-id');
+
+            if (productId) {
+                // Lưu ID sản phẩm vào localStorage để sử dụng ở trang product.html
+                localStorage.setItem('selectedProductId', productId);
+
+                // Điều hướng tới trang chi tiết sản phẩm
+                window.location.href = '/product/product.html';
+            } else {
+                console.error('ID sản phẩm không tồn tại!');
+            }
+        });
+    });
+});
+
+// Trong trang product.html
+document.addEventListener('DOMContentLoaded', function () {
+    const selectedProductId = localStorage.getItem('selectedProductId');
+    if (selectedProductId) {
+        const product = products.find(p => p.id == selectedProductId);
+        if (product) {
+            // Render thông tin sản phẩm
+            document.getElementById('product-title').innerText = product.title;
+            document.getElementById('product-price').innerText = product.price || product.prices?.[product.options.capacity[0]]?.[product.options.color[0]];
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-description').innerText = product.description;
+            document.getElementById('product-ram').innerText = product.RAM;
+            document.getElementById('product-mobile_network').innerText = product.mobile_network;
+            document.getElementById('product-sim').innerText = product.Sim;
+            document.getElementById('product-cpu').innerText = product.CPU;
+            document.getElementById('product-operating_system').innerText = product.operating_system;
+            document.getElementById('product-screen').innerText = product.screen;
+            document.getElementById('product-resolution').innerText = product.resolution;
+            // ... (tiếp tục rendering các thông tin khác)
+
+            // Hiển thị lựa chọn dung lượng và màu
+            const capacityOptions = document.getElementById('capacity-options');
+            capacityOptions.innerHTML = '';
+            product.options.capacity.forEach(item => {
+                const button = document.createElement('button');
+                button.classList.add('capacity-option');
+                button.dataset.value = item;
+                button.textContent = item;
+                capacityOptions.appendChild(button);
+            });
+
+            const colorOptions = document.getElementById('color-options');
+            colorOptions.innerHTML = '';
+            product.options.color.forEach(item => {
+                const button = document.createElement('button');
+                button.classList.add('color-option');
+                button.dataset.value = item;
+                button.textContent = item;
+                colorOptions.appendChild(button);
+            });
+
+            // Xử lý sự kiện khi chọn dung lượng hoặc màu
+            const capacityButtons = document.querySelectorAll('.capacity-option');
+            const colorButtons = document.querySelectorAll('.color-option');
+
+            capacityButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    capacityButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    updatePrice();
+                });
+            });
+
+            colorButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    colorButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    updatePrice();
+                });
+            });
+
+            const quantityInput = document.getElementById('product-quantity');
+            quantityInput.addEventListener('input', updatePrice); // Cập nhật giá khi số lượng thay đổi
+
+            // Hàm thêm sản phẩm vào giỏ hàng
+            const addToCartButton = document.getElementById('add-to-cart');
+            addToCartButton.onclick = function () {
+                const selectedCapacity = document.querySelector('.capacity-option.active').getAttribute('data-value');
+                const selectedColor = document.querySelector('.color-option.active').getAttribute('data-value');
+                const quantity = parseInt(document.getElementById('product-quantity').value, 10); // Lấy giá trị số lượng
+
+                updatePrice(selectedCapacity, selectedColor, quantity);
+
+                if (product.prices) {
+                    const productPrice = product.prices[selectedCapacity][selectedColor];
+                    if (productPrice) {
+                        addToCart(product.title, productPrice, product.image, `${selectedCapacity} - ${selectedColor}`, productId, quantity);
+                    } else {
+                        console.error('Giá không tồn tại cho tùy chọn này.');
+                    }
+                } else {
+                    addToCart(product.title, product.price, product.image, `${selectedCapacity} - ${selectedColor}`, productId, quantity);
+                }
+            };
+        } else {
+            console.error('Không tìm thấy sản phẩm với ID:', selectedProductId);
+        }
+    } else {
+        console.error('Không có ID sản phẩm được chọn!');
+    }
 
 
+});
+
+function updatePrice() {
+    const selectedCapacity = document.querySelector('.capacity-option.active')?.getAttribute('data-value');
+    const selectedColor = document.querySelector('.color-option.active')?.getAttribute('data-value');
+    const quantity = parseInt(document.getElementById('product-quantity').value, 10); // Lấy số lượng sản phẩm
+
+    if (!selectedCapacity || !selectedColor) {
+        console.error('Chưa chọn dung lượng hoặc màu sắc.');
+        return;
+    }
+
+    let price;
+    if (products.prices) {
+        price = products.prices[selectedCapacity][selectedColor];
+    } else {
+        price = product.price;
+    }
+
+    if (price) {
+        const totalPrice = price * quantity; // Tính tổng giá theo số lượng
+        document.getElementById('product-price').innerText = totalPrice.toLocaleString() + ' VND'; // Hiển thị giá
+    } else {
+        console.error('Giá không tồn tại cho tùy chọn này.');
+    }
+}
 // Hàm cập nhật tổng tiền
 function updateTotalPrice(priceValue, action) {
     if (action === 'add') {
@@ -300,66 +436,7 @@ products.forEach(product => {
     }
 });
 
-// Thêm event listener để hiển thị active state
-const capacityButtons = document.querySelectorAll('.capacity-option');
-const colorButtons = document.querySelectorAll('.color-option');
 
-capacityButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        capacityButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-    });
-});
 
-colorButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        colorButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-    });
-});
 
-function updatePrice() {
-    const product = products.find(p => p.title === document.getElementById('product-title').innerText);
-    const selectedCapacity = document.querySelector('.capacity-option.active')?.getAttribute('data-value');
-    const selectedColor = document.querySelector('.color-option.active')?.getAttribute('data-value');
-
-    if (product && product.prices && selectedCapacity && selectedColor) {
-        const productPrice = product.prices[selectedCapacity][selectedColor];
-        if (productPrice) {
-            document.getElementById('product-price').innerText = productPrice; // Cập nhật giá hiển thị
-        } else {
-            console.error('Giá không tồn tại cho tùy chọn này.');
-        }
-    } else {
-        console.error('Chưa chọn dung lượng hoặc màu sắc.');
-    }
-}
-
-// Gắn sự kiện click cho các nút tùy chọn dung lượng và màu sắc
-document.querySelectorAll('.capacity-option').forEach(option => {
-    option.addEventListener('click', function () {
-        // Xóa class 'active' từ tất cả các nút 'capacity-option'
-        document.querySelectorAll('.capacity-option').forEach(opt => opt.classList.remove('active'));
-        // Thêm class 'active' cho nút được nhấp
-        this.classList.add('active');
-        updatePrice(); // Gọi hàm updatePrice để cập nhật giá
-    });
-});
-
-document.querySelectorAll('.color-option').forEach(option => {
-    option.addEventListener('click', function () {
-        // Xóa class 'active' từ tất cả các nút 'color-option'
-        document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
-        // Thêm class 'active' cho nút được nhấp
-        this.classList.add('active');
-        updatePrice(); // Gọi hàm updatePrice để cập nhật giá
-    });
-});
-
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function (event) {
-        event.preventDefault(); // Ngăn chặn hành động mặc định
-        parent.location.href = this.href; // Chuyển hướng trang cha
-    });
-});
 

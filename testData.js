@@ -1,7 +1,19 @@
-import { productData } from './data.js';
-
-const itemsPerPage = 12; // Số lượng sản phẩm trên mỗi trang
+let itemsPerPage = 12; // Số lượng sản phẩm trên mỗi trang
 let currentPage = 1;
+let productData = []; // Mảng chứa dữ liệu sản phẩm từ server
+
+// Hàm lấy dữ liệu từ server
+async function fetchProductData() {
+    try {
+        const response = await fetch('https://api.example.com/products'); // Đổi URL thành API thực tế
+        const data = await response.json();
+        productData = data; // Lưu dữ liệu sản phẩm vào biến productData
+        setupPagination(); // Tạo phân trang
+        displayProducts(currentPage); // Hiển thị sản phẩm cho trang đầu tiên
+    } catch (error) {
+        console.error('Lỗi khi lấy dữ liệu sản phẩm:', error);
+    }
+}
 
 // Hàm để hiển thị sản phẩm dựa trên số trang hiện tại
 function displayProducts(page) {
@@ -23,7 +35,7 @@ function displayProducts(page) {
 
         const productElement = `
             <div class="col-md-3 new-products-item">
-                <img class="new-products-item-image" src="${product.image}" />
+                <img class="new-products-item-image" src="${product.img}" alt="${product.title}" />
                 <h6 class="new-products-item-title">${product.title}</h6>
                 <p class="new-products-item-price">${product.price}</p>
                 <button class="btn-hot-products-item">Chọn sản phẩm</button>
@@ -52,12 +64,7 @@ function setupPagination() {
     }
 }
 
-// Khởi tạo phân trang và hiển thị sản phẩm ban đầu
+// Khi trang tải, gọi API để lấy dữ liệu sản phẩm và hiển thị
 document.addEventListener('DOMContentLoaded', () => {
-    setupPagination();
-    displayProducts(currentPage);
+    fetchProductData(); // Gọi API lấy dữ liệu khi trang vừa tải
 });
-
-
-
-

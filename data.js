@@ -141,3 +141,55 @@ export const productData = [
     },
     // ... tiếp tục thêm sản phẩm
 ];
+
+export const products = [
+    {
+        id: '1',
+        title: 'Điện thoại iPhone 16 Pro Max 256GB',
+        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
+        description: 'Sản phẩm cao cấp của Apple với công nghệ hiện đại.',
+        options: {
+            capacity: ['256GB', '512GB', '1TB'],
+            color: ['Titan tự nhiên', 'Titan trắng', 'Titan đen', 'Titan Sa Mạc']
+        },
+        prices: {
+            '256GB': {
+                'Titan tự nhiên': '34.990.000₫',
+                'Titan trắng': '35.490.000₫',
+                'Titan đen': '35.990.000₫',
+                'Titan Sa Mạc': '36.490.000₫'
+            },
+            '512GB': {
+                'Titan tự nhiên': '39.990.000₫',
+                'Titan trắng': '40.490.000₫',
+                'Titan đen': '40.990.000₫',
+                'Titan Sa Mạc': '41.490.000₫'
+            },
+            '1TB': {
+                'Titan tự nhiên': '44.990.000₫',
+                'Titan trắng': '45.490.000₫',
+                'Titan đen': '45.990.000₫',
+                'Titan Sa Mạc': '46.490.000₫'
+            }
+        },
+        RAM: '8 GB',
+        mobile_network: 'Hỗ trợ 5G',
+        Sim: '1 Nano SIM & 1 eSIM',
+        CPU: 'Hãng không công bố',
+        operating_system: 'IOS',
+        screen: 'OLED',
+        resolution: 'Super Retina XDR (1320 x 2868 Pixels)',
+
+    },
+    {
+        id: '2',
+        title: 'Điện thoại iPhone 15 Pro Max 256GB',
+        image: 'https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728974132/iphone-16-pro-max-titan-den-1-638638962017739954-750x500_drvd5f.jpg',
+        description: 'Điện thoại iPhone 15 Pro Max với công nghệ mới nhất.',
+        options: {
+            capacity: ['128GB', '256GB'],
+            color: ['Đen', 'Xanh', 'Trắng']
+        },
+        price: '29.990.000₫' // Sản phẩm này chỉ có một giá
+    }
+];

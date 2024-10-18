@@ -39,6 +39,22 @@
                     <p class="login-content">Đăng Ký</p>
                 </button>
             </div>
+            <div class="dropdown" id="boxUser" style="display:none">
+                <a class="d-flex align-items-center dropdown-toggle" href="#" role="button" id="userDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="user-avatar me-2"
+                        src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728452785/portrait-smiling-blonde-woman_gufmzp.jpg"
+                        alt="User Avatar" width="40" height="40" />
+                    <p class="user-name mb-0">Username</p>
+                </a>
+
+                <ul class="dropdown-menu" id="userMenu" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#" id="logout">Logout</a></li>
+                </ul>
+            </div>
+
         </div>
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
@@ -82,6 +98,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="/nav/navbar.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 
 </html>

@@ -21,18 +21,18 @@
                 <h6 class="list-product-title">Danh Mục Sản Phẩm</h6>
             </div>
             <ul class="product-ul">
-                <li class="product-item" onclick="goToProducts('featured')">Sản phẩm nổi bật</li>
-                <li class="product-item" onclick="goToProducts('promotion')">Sản phẩm khuyến mãi</li>
-                <li class="product-item" onclick="goToProducts('mobile')">Điện thoại di động</li>
-                <li class="product-item" onclick="goToProducts('laptop')">Laptop</li>
-                <li class="product-item" onclick="goToProducts('tv')">Tivi</li>
-                <li class="product-item" onclick="goToProducts('headphones')">Tai nghe</li>
-                <li class="product-item" onclick="goToProducts('audio')">Âm thanh</li>
-                <li class="product-item" onclick="goToProducts('pc')">PC </li>
-                <li class="product-item" onclick="goToProducts('computer_mouse')">Chuột</li>
-                <li class="product-item" onclick="goToProducts('audio')">Bàn phím</li>
-                <!-- Thêm các sản phẩm khác -->
+                <button class="product-item" data-filter='nổi bật'>Sản phẩm nổi bật</button>
+                <button class="product-item" data-filter='khuyến mãi'>Sản phẩm khuyến mãi</button>
+                <button class="product-item" data-filter="điện thoại">Điện thoại di động</button>
+                <button class="product-item" data-filter='laptop'>Laptop</button>
+                <button class="product-item" data-filter="tivi">Tivi</button>
+                <button class="product-item" data-filter="tai nghe">Tai nghe</button>
+                <button class="product-item" data-filter="âm thanh">Âm thanh</button>
+                <button class="product-item" data-filter="pc">PC</button>
+                <button class="product-item" data-filter="chuột">Chuột</button>
+                <button class="product-item" data-filter="bàn phím">Bàn phím</button>
             </ul>
+
         </div>
         <div class="support-box">
             <h5 class="support-title">Hỗ Trợ Trực Tuyến</h5>
@@ -95,8 +95,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="/script.js"></script>
-    <script src="/data.js"></script>
-    <script type="module" src="/pagination.js"></script>
+    <script src="/script/productFilter.js"></script>
 </body>
 
 </html>

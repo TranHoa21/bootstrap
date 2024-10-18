@@ -207,10 +207,7 @@ list-style: none;
 .detailed-information ul{
 padding:0;
 }
-.pagination {
-  margin-top: 20px;
-  text-align: center;
-}
+
 
 .page-btn {
   padding: 8px 12px;
@@ -332,4 +329,107 @@ padding:0;
   background-color: #0056b3; /* Màu nền cho nút đang chọn */
   color: white; /* Màu chữ cho nút đang chọn */
   font-weight: bold; /* Chữ đậm cho nút đang chọn */
+}
+.iltered-products-box-contiainer{
+  margin: 30px 0;
+  display: none ;
+}
+
+.filtered-products-box.row{
+  margin: 30px 0;
+}
+.col-md-3.filtered-products-item{
+  padding: 10px;
+  border: 1px solid  rgba(196, 196, 196, 0.418);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  margin: 0 10px; /* Adjust the margin */
+  width: calc(25% - 20px);
+}
+.col-md-3.filtered-products-item:first-child{
+  margin-left: 0;
+}
+
+.col-md-3.filtered-products-item:last-child{
+  margin-right: 0;
+}
+.filtered-products-item-image{
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  padding: 15px;
+ 
+}
+.filtered-products-item-title{
+  text-align: center;
+  text-transform: uppercase;
+}
+.filtered-products-item-price{
+  text-align: center;
+  font-weight: 500;
+  color:rgba(120, 202, 100, 1)
+}
+
+
+.pagination-container {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh các nút */
+  justify-content: center; /* Căn giữa các nút */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.pagination-container  button {
+  background-color: #007bff; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền */
+  border-radius: 5px; /* Bo góc */
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.pagination-container  button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.pagination-container  button:disabled {
+  background-color: #cccccc; /* Màu nền cho nút bị vô hiệu hóa */
+  cursor: not-allowed; /* Con trỏ không cho phép */
+}
+
+.pagination-container  button.active {
+  background-color: #0056b3; /* Màu nền cho nút đang chọn */
+  color: white; /* Màu chữ cho nút đang chọn */
+  font-weight: bold; /* Chữ đậm cho nút đang chọn */
+}
+.box-pay.row{
+  margin: 60px 0;
+}
+.box-pay-item.col-md-6{
+  width: 50%;
+}
+.pay-title{
+  margin: 20px 0;
+}
+.select-product{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(146, 146, 146, 0.692);
+  border-radius: 5px ;
+}
+.box-btn-cart-pay{
+  display:flex !important;
+  justify-content: space-between;
+
+}
+.btn.btn-primary.cart-btn{
+  width: 45%;
+}
+.back-home{
+  background-color: rgb(87, 87, 87);
+  color: white;
+  border: 1px solid rgb(87, 87, 87)
 }

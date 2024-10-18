@@ -10,11 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../sidebar/sidebar.css">
 </head>
 
 <body>
-
     <!-- Navbar -->
     <iframe class="nav-head" src="/nav/navbar.html"></iframe>
     <div class="body row">
@@ -97,67 +96,13 @@
         <div class="col-md-8 home-data">
             <img class="banner-home"
                 src="https://res.cloudinary.com/dhjrrk4pg/image/upload/v1728968024/beautiful-happy-asian-girl-showing-mobile-phone-screen-application-smartphone-gadget-standing-yellow-background_1_rdbgpa.jpg" />
-
-            <div class="product-details ">
-                <div id="notification" class="alert alert-success" style="display: none; margin-top: 10px;">
-                    Đã thêm sản phẩm vào giỏ hàng!
-                </div>
-                <div class="product-details-content row">
-                    <h5 id="product-title"></h5>
-                    <div class="col-md-6 product-box-item">
-                        <img id="product-image" src="" alt="Product Image" />
-                        <h3 id="product-price"></h3>
-                        <div class="box-inventory">
-                            <p id="product-sold">Đã bán:</p>
-                            <p id="product-inventory">Tồn kho:</p>
-                        </div>
-                        <!-- Nút Mua Ngay và Thêm vào giỏ hàng -->
-                        <div class="box-btn-product">
-                            <button id="buy-now" class="btn btn-success">Mua Ngay</button>
-                            <button id="add-to-cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
-                        </div>
-
+            <div class="box-product">
+                <div class="filtered-products-box-contiainer" id="filtered-container">
+                    <div class="filtered-products-box row">
+                        <!-- Sản phẩm sẽ được hiển thị ở đây -->
                     </div>
-                    <div class="col-md-6 product-box-item">
-                        <!-- Lựa chọn dung lượng -->
-                        <div id="capacity-options">
-                        </div>
-
-                        <label>Chọn màu:</label>
-                        <div id="color-options">
-                        </div>
-                        <div>
-                            <label for="quantity">Số lượng:</label>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1" required>
-                        </div>
-                        <div class="description-box">
-                            <p class="description-box-title">Mô tả:</p>
-                            <p id="product-description"> </p>
-                        </div>
-                        <h6>Thông tin chi tiết</h6>
-                        <div class="detailed-information">
-                            <ul class="detailed-information-ul">
-                                <li class="detailed-information-li">RAM</li>
-                                <li class="detailed-information-li">Mạng di động</li>
-                                <li class="detailed-information-li">Sim</li>
-                                <li class="detailed-information-li">CPU</li>
-                                <li class="detailed-information-li">Hệ điều hành</li>
-                                <li class="detailed-information-li">Công nghệ màn hình</li>
-                                <li class="detailed-information-li">Độ phân giải</li>
-                            </ul>
-                            <ul class="detailed-information-ul-right">
-                                <li id="product-ram" class="detailed-information-li"></li>
-                                <li id="product-mobile_network" class="detailed-information-li"></li>
-                                <li id="product-sim" class="detailed-information-li"></li>
-                                <li id="product-cpu" class="detailed-information-li"></li>
-                                <li id="product-operating_system" class="detailed-information-li"></li>
-                                <li id="product-screen" class="detailed-information-li"></li>
-                                <li id="product-resolution" class="detailed-information-li"></li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
+                <div id="paginationFilter" class="pagination-container"></div>
             </div>
         </div>
     </div>
@@ -170,18 +115,13 @@
     <iframe class="footer-bottom" src="/footer/footer.html"></iframe>
 
 
-
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="/script/pagination.js"></script>
     <script src="/script/script.js"></script>
-    <script src="/product/product.js"></script>
-    <script src="/script/productFilter.js"></script>
-</body>
-
-</html>
+    <script type="module" src="/script/productFilter.js"></script>
 </body>
 
 </html>
